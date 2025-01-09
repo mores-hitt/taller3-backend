@@ -1,12 +1,14 @@
 Before anything, you must have installed [NodeJS 18.18.0](https://nodejs.org/es) and [MySQL Workbench 8.1.0](https://dev.mysql.com/downloads/mysql/) in your device, also you have to install the sequelize´s CLI, to do this
-you have to execute the following commands in the  BASH command console:
+you have to execute the following commands in the BASH command console:
+
 ```bash
 	npm install -g sequelize-cli
 	npm install
 ```
+
 Database
 
-to execute the migrations and seeders you must modified the name of the file  .env.example to .env, then modified the password section with your password from workbench.
+to execute the migrations and seeders you must modified the name of the file .env.example to .env, then modified the password section with your password from workbench.
 Also add a variable that define the secret key for the token.
 
 ```bash
@@ -14,6 +16,7 @@ Also add a variable that define the secret key for the token.
 	DB_DATABASE=nombre_base_de_datos  //name of the database in workbench
 	DB_USER=root
 	DB_PASSWORD= //here goes the password
+	DB_PORT= //here goes the port
     TOKEN_SECRET=mysecretkey
 ```
 
